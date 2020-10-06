@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { Toast, ToastrModule } from 'ngx-toastr';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -17,6 +17,7 @@ import { Toast, ToastrModule } from 'ngx-toastr';
     })
   ],
   exports: [
+    FormsModule,
     BsDropdownModule,
     ToastrModule
   ]
